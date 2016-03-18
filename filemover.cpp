@@ -19,6 +19,6 @@ bool FileMover::moveFile(const QString &oldName, const QString &newName)
 void FileMover::moveFileByVector(QVector<Element> &elements)
 {
     foreach(Element tmp,elements){
-       FileMover::moveFile(tmp.getName(),tmp.getPath());
+       FileMover::moveFile(tmp.getName(),tmp.getPath()); //sos
     }
 }
